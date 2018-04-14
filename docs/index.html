@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="relax.css">
-	<title>RelaxCSS : A mini Css library</title>
+	<title>RelaxCSS : A mini CSS library</title>
 
 </head>
 <style type="text/css">
@@ -13,10 +13,10 @@
 	}
 	aside
 	{
-		float: left ;  
+		
 		position: sticky;
-		top:4em;
-		width: 10vw; 
+		top:3em;
+		height: 90vh ; 
 	}
 	ul
 	{
@@ -38,15 +38,15 @@
 		padding: 0.8em;
 		font-size: 0.9em; 
 	}
-	aside li::before
+	main
 	{
-		content: '- ';
-		display: inline; 
+		display: grid ; 
+		grid-template-columns: 1fr 3fr ; 
 	}
-	
 </style>
+
 <body onload="encodePreElements()">
-	<nav class='nav sb sticky-top dark'>
+<nav class='nav sb sticky-top dark'>
 		<a class='nav-brand' href="index.html">RelaxCSS</a>
 		<ul class='nav-sa'>
 			<li><a href="index.html">Home</a></li>
@@ -54,6 +54,7 @@
 			<li><a href="https://github.com/Ziyadsk/relaxCSS">Github</a></li>
 		</ul>
 	</nav>
+	<main class='w-3'>
 	<aside>
 		<ul>
 			<li><a href="#Headings">Headings</a></li>
@@ -76,7 +77,9 @@
 			<li><a href="#Forms">Forms</a></li>
 		</ul>
 	</aside>
-	<div class="container w-3 center">
+
+	<div class="container center">
+	
 	<h1 class='text-large center-text c-black'>Welcome to RelaxCSS</h1>
 	<h1 id="Headings">Headings</h1>
 	<hr>
@@ -105,12 +108,12 @@
 	<h1 id="Colors" class='mt-2'>Colors</h1>
 	<hr>
 	<div class="text-container">
-		<span  class='c-green'> Green </span>
-		<span  class='c-red'> Red </span>
-		<span  class='c-blue'> Blue </span>
-		<span  class='c-yellow'> Yellow </span>
-		<span  class='c-white dark'> White </span>
-		<span  class='c-black'> Black </span>
+		<span  class='c-green mr-1'> Green </span>
+		<span  class='c-red mr-1'> Red </span>
+		<span  class='c-blue mr-1'> Blue </span>
+		<span  class='c-yellow mr-1'> Yellow </span>
+		<span  class='c-white dark mr-1'> White </span>
+		<span  class='c-black mr-1'> Black </span>
 	</div>
 	<h3>Code : </h3>
 	<div class="text-container dark">
@@ -129,12 +132,12 @@
 <h1 id="BacgroundColors" class='mt-2'>Background colors</h1>
 	<hr>
 	<div class="text-container">
-		<span  class='bg-green'> Background Green </span>
-		<span  class='bg-red'> Background Red </span>
-		<span  class='bg-blue'> Background Blue </span>
-		<span  class='bg-yellow'>Background  Yellow </span>
-		<span  class='bg-white c-black'>Background  White </span>
-		<span  class='bg-black c-white'> Background Black </span>
+		<span  class='bg-green c-white p-1 m-1'> Background Green </span>
+		<span  class='bg-red  c-white p-1 m-1'> Background Red </span>
+		<span  class='bg-blue  c-white p-1 m-1'> Background Blue </span>
+		<span  class='bg-yellow  p-1 m-1'>Background  Yellow </span>
+		<span  class='bg-white c-black p-1 m-1'>Background  White </span>
+		<span  class='bg-black c-white p-1 m-1'> Background Black </span>
 	</div>
 	<h3>Code : </h3>
 	<div class="text-container dark">
@@ -680,7 +683,7 @@
 	</footer> -->
 	<div id='footer'>
 	</div>
-
+</main>
 
 	</body>
 

@@ -1,5 +1,3 @@
-
-
 /* tags */
 body
 {
@@ -24,7 +22,6 @@ p
 	margin: .2em 0; 
 
 }
-
 /*container class*/
 .container
 {
@@ -49,7 +46,12 @@ p
 }
 .text-container *
 {
+
 	word-wrap: break-word;
+}
+.text-container span
+{
+	display: inline-block; 
 }
 .stacked  
 {
@@ -99,6 +101,10 @@ p
 .w-3
 {
 	width:  75% ; 
+}
+.w-4
+{
+	width: 90%; 
 }
 .w-max
 {
