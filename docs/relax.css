@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6
 }
 hr
 {
-	border:0.05em solid #ddd;
+	border:0.05em solid #eee;
 }
 p
 { 
@@ -42,11 +42,11 @@ p
 	margin: 0 auto ; 
 	overflow: scroll;
 	word-wrap: break-word;
+	border-radius: 3px; 
 
 }
 .text-container *
 {
-
 	word-wrap: break-word;
 }
 .text-container span
@@ -283,6 +283,8 @@ p.border
 	padding: 1.2em; 
 	color:#666;
 	align-items: center;
+	min-width: 95%; 
+	flex-wrap: wrap; 
 }
 .nav *
 {
@@ -632,3 +634,5 @@ p.border
 	border-radius: 3px; 
 	padding: 2em 0em; 
 }
+
+

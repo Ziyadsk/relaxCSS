@@ -7,15 +7,23 @@
 
 </head>
 <style type="text/css">
+	@font-face
+	{
+		font-family: "nuni";
+		src:url('fonts/nuni.ttf');
+	}
+	body
+	{
+		 font-family: "nuni";
+	}
 	pre
 	{ 
-		font-family: "consolas" ,"menlo" ,"source code pro","ubuntu mono" ,"roboto mono","inconsolata",monospace;
+		font-family:"consolas" ,"menlo" ,"source code pro","ubuntu mono" ,"roboto mono","inconsolata",monospace;
 	}
 	aside
 	{
-		
 		position: sticky;
-		top:3em;
+		top:1px;
 		height: 90vh ; 
 	}
 	ul
@@ -32,6 +40,9 @@
 	aside a:hover
 	{
 		color:#111;
+		background-color: #eee; 
+		padding: .5em ; 
+		border-radius: 4px; 
 	}
 	aside li
 	{
@@ -43,10 +54,32 @@
 		display: grid ; 
 		grid-template-columns: 1fr 3fr ; 
 	}
+
+@media screen and (max-width:800px)
+{
+	main
+	{
+		display: flex; 
+		width: 80%; 
+		margin: auto ; 
+	}
+	aside
+	{
+		display: none; 
+	}	
+	.tab
+	{
+		display: none; 
+	}
+	.r-form
+	{
+		width: 80%; 
+	}
+}
 </style>
 
 <body onload="encodePreElements()">
-<nav class='nav sb sticky-top dark'>
+<nav class='nav sb  '>
 		<a class='nav-brand' href="index.html">RelaxCSS</a>
 		<ul class='nav-sa'>
 			<li><a href="index.html">Home</a></li>
@@ -281,7 +314,16 @@
 			<li><a href="#">About</a></li>
 		</ul>
 	</div>
-
+	<h3>Or in Dark (just add the dark class) : </h3>
+	<div class='nav  sb dark'>
+		<a class='nav-brand' href="">RelaxCSS</a>
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
 	<h3>Code : </h3>
 	<div class="text-container dark">
 	<pre>
@@ -346,6 +388,7 @@
 	</nav>
 	</pre>
 </div>
+
 
 
 
