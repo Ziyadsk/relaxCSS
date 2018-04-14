@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/relax.css">
+	<title>RelaxCSS : A mini Css library</title>
+
+</head>
+<style type="text/css">
+	pre
+	{ 
+		font-family: "consolas" ,"menlo" ,"source code pro","ubuntu mono" ,"roboto mono","inconsolata",monospace;
+	}
+	aside
+	{
+		top:4em;
+		width: 40vw; 
+	}
+	ul
+	{
+		list-style-type: none; 
+		padding: 0px; 
+	}
+	aside a
+	{
+		color:#777;
+		text-decoration: none ;
+		font-size: 1.5em;   
+	}
+	aside a:hover
+	{
+		color:#111;
+	}
+	aside li
+	{
+		padding: 0.8em;
+		font-size: 0.9em; 
+	}
+	li ul
+	{
+		display: flex !important;
+		width: 70vw; 
+	}
+</style>
+</style>
+<body onload="encodePreElements()">
+	<nav class='nav sb sticky-top '>
+		<a class='nav-brand ' href="index.html">RelaxCSS</a>
+		<ul class='nav-sa'>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Classes</a></li>
+			<li><a href="#">Github</a></li>
+		</ul>
+	</nav>
+
+	<div class="global-container w-3 center">
+		<h1 class='text-large'>Classes</h1>
+			<aside>
+		<ul>
+			<li><a href="#Colors">Colors</a>
+				<ul>
+					<li>.c-green</li>
+					<li>.c-red</li>
+					<li>.c-blue</li>
+					<li>.c-white</li>
+					<li>.c-black</li>
+	                <li>.c-yellow</li>
+				</ul>
+			</li>
+
+			<li><a href="#BacgroundColors">Backgound colors</a>
+				<ul>
+					<li>.bg-green</li>
+					<li>.bg-red</li>
+					<li>.bg-blue</li>
+					<li>.bg-white</li>
+					<li>.bg-black</li>
+	                <li>.bg-yellow</li>
+				</ul>
+			</li>
+			<li><a href="#Buttons">Buttons</a>
+				<ul>
+					<li>.btn</li>
+					<li>.btn-1</li>
+					<li>.btn-2</li>
+					<li>.btn-3</li>
+					<li>.btn-4</li>
+	                <li>.btn-5</li>
+	                <li>.btn-6</li>
+	                <li>.btn-success</li>
+	                <li>.btn-warning</li>
+	                <li>.btn-danger</li>
+				</ul>
+			</li>
+			</li>
+			<li><a href="#ButtonSizes">Buttons sizes</a>
+				<ul>
+	                <li>.btn-small</li>
+	                <li>.btn-medium</li>
+	                <li>.btn-large</li>
+				</ul>
+			</li>
+			<li><a href="#TextSizes">Text sizes</a>
+				<ul>
+	                <li>.text-small</li>
+	                <li>.text-medium</li>
+	                <li>.text-large</li>
+	                <li>.text-huge</li>
+				</ul>
+			</li>
+			<li><a href="#Borders">Borders</a>
+				<ul>
+	                <li>.border</li>
+	                <li>.border-1</li>
+	                <li>.border-2</li>
+	                <li>.border-3</li>
+				</ul>
+				</li>
+			<li><a href="#Shadows">Shadows</a>
+					<ul>
+	                <li>.shadow</li>
+	                <li>.shadow-1</li>
+	                <li>.shadow-2</li>
+	                <li>.shadow-3</li>
+				</ul>
+			</li>
+			<li><a href="#Header">Header/nav</a>
+					<ul>
+					<li>.nav</li>
+	                <li>.nav-brand</li>
+	                <li>.sb (space between elements)</li>
+	                <li>.sa (space around elements)</li>
+	                <li>.nav-center</li>
+	                <li>.nav-end (group element at the right)</li>
+	                <li>.fixed-top</li>
+	                <li>.sticky-top</li>
+	            </ul>
+			</li>
+			<li><a href="#FontWeight">Font weight</a>
+				<ul>
+				<li>.text-light</li>
+	                <li>.text-bold</li>
+	            </ul>
+			</li>
+			<li><a href="#TextContainers">Text containers</a>
+				<ul>
+					<li>.text-container</li>
+				</ul>
+			</li>
+			<li><a href="#StackedCentered">Stack/Center elements</a>
+				<ul>
+					<li>.stacked</li>
+					<li>.stacked-center</li>
+					<li>.text-center</li>
+					<li>.center-children</li>
+					<li>.center</li>
+				</ul>
+			</li>
+			<li><a href="#Margins">Margins</a>
+				<ul>
+					<li>.m-* (margin)</li>
+					<li>.mr-* (margin-right)</li>
+					<li>.ml-* (margin-left)</li>
+					<li>.mb-* (margin-bottom)</li>
+					<li>.mt-* (margin-top)</li>
+				</ul>
+				<li>*(levels (1,2,3)) example: ml-2 or m-1 </li>
+			</li>
+			<li><a href="#Paddings">Paddings</a>
+				<ul>
+					<li>.p-* (padding)</li>
+					<li>.pr-* (padding-right)</li>
+					<li>.pl-* (padding-left)</li>
+					<li>.pb-* (padding-bottom)</li>
+					<li>.pt-* (padding-top)</li>
+				</ul>
+				<li>*(levels (1,2,3)) example: pl-2 or p-1 </li>
+			</li>
+			<li><a href="#Width">Width</a>
+				<ul>
+					<li>.w-1</li>
+					<li>.w-2</li>
+					<li>.w-3</li>
+					<li>.w-max</li>
+				</ul>
+			</li>
+			<li><a href="#LightDark">Light/Dark</a>
+				<ul>
+					<li>.light</li>
+					<li>.dark</li>
+				</ul>
+			</li>
+			<li><a href="#Tables">Tables</a>
+				<ul>
+					<li>.tab</li>
+				</ul>
+			</li>
+			<li><a href="#Forms">Forms</a>
+				<ul>
+					<li>.r-form</li>
+					<li>.input-text</li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+		<hr>
+	</div>
+	

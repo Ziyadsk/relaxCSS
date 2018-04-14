@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/relax.css">
+	<title>RelaxCSS : A mini Css library</title>
+
+</head>
+<style type="text/css">
+	pre
+	{ 
+		font-family: "consolas" ,"menlo" ,"source code pro","ubuntu mono" ,"roboto mono","inconsolata",monospace;
+	}
+	aside
+	{
+		float: left ;  
+		position: sticky;
+		top:4em;
+		width: 10vw; 
+	}
+	ul
+	{
+		list-style-type: none; 
+		padding: 0px; 
+
+	}
+	aside a
+	{
+		color:#777;
+		text-decoration: none ;  
+	}
+	aside a:hover
+	{
+		color:#111;
+	}
+	aside li
+	{
+		padding: 0.8em;
+		font-size: 0.9em; 
+	}
+	aside li::before
+	{
+		content: '- ';
+		display: inline; 
+	}
+	
+</style>
+<body onload="encodePreElements()">
+	<nav class='nav sb sticky-top dark'>
+		<a class='nav-brand' href="index.html">RelaxCSS</a>
+		<ul class='nav-sa'>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="classes.html">Classes</a></li>
+			<li><a href="#">Github</a></li>
+		</ul>
+	</nav>
+	<aside>
+		<ul>
+			<li><a href="#Headings">Headings</a></li>
+			<li><a href="#Colors">Colors</a></li>
+			<li><a href="#BacgroundColors">Backgound colors</a></li>
+			<li><a href="#Buttons">Buttons</a></li>
+			<li><a href="#ButtonSizes">Buttons sizes</a></li>
+			<li><a href="#TextSizes">Text sizes</a></li>
+			<li><a href="#Borders">Borders</a></li>
+			<li><a href="#Shadows">Shadows</a></li>
+			<li><a href="#Header">Header/nav</a></li>
+			<li><a href="#FontWeight">Font weight</a></li>
+			<li><a href="#TextContainers">Text containers</a></li>
+			<li><a href="#StackedCentered">Stack/Center elements</a></li>
+			<li><a href="#Margins">Margins</a></li>
+			<li><a href="#Paddings">Paddings</a></li>
+			<li><a href="#Width">Width</a></li>
+			<li><a href="#LightDark">Light/Dark</a></li>
+			<li><a href="#Tables">Tables</a></li>
+			<li><a href="#Forms">Forms</a></li>
+		</ul>
+	</aside>
+	<div class="container w-3 center">
+	<h1 class='text-large center-text c-blue'>Welcome to RelaxCSS</h1>
+	<h1 id="Headings">Headings</h1>
+	<hr>
+	<div class="text-container">
+	<h1>Heading H1</h1>
+	<h2>Heading H2</h2>
+	<h3>Heading H3</h3>
+	<h4>Heading H4</h4>
+	<h5>Heading H5</h5>
+	<h6>Heading H6</h6>
+	</div>
+
+	<h3>Code : </h3>
+	<div class="text-container dark">
+
+<pre>
+	<h1> Heading H1 </h1>
+	<h2> Heading H2 </h2>
+	<h3> Heading H3 </h3>
+	<h4> Heading H4 </h4>
+	<h5> Heading H5 </h5>
+	<h6> Heading H6 </h6>
+</pre>
+	</div>
+
+	<h1 id="Colors" class='mt-2'>Colors</h1>
+	<hr>
+	<div class="text-container">
+		<span  class='c-green'> Green </span>
+		<span  class='c-red'> Red </span>
+		<span  class='c-blue'> Blue </span>
+		<span  class='c-yellow'> Yellow </span>
+		<span  class='c-white dark'> White </span>
+		<span  class='c-black'> Black </span>
+	</div>
+	<h3>Code : </h3>
+	<div class="text-container dark">
+
+<pre>
+	<span  class='c-green'> Green </span>
+	<span  class='c-red'> Red </span>
+	<span  class='c-blue'> Blue </span>
+	<span  class='c-yellow'> Yellow </span>
+	<span  class='c-white dark'> White </span>
+	<span  class='c-black'> Black </span>
+</pre>
+	</div>
+
+
+<h1 id="BacgroundColors" class='mt-2'>Background colors</h1>
+	<hr>
+	<div class="text-container">
+		<span  class='bg-green'> Background Green </span>
+		<span  class='bg-red'> Background Red </span>
+		<span  class='bg-blue'> Background Blue </span>
+		<span  class='bg-yellow'>Background  Yellow </span>
+		<span  class='bg-white c-black'>Background  White </span>
+		<span  class='bg-black c-white'> Background Black </span>
+	</div>
+	<h3>Code : </h3>
+	<div class="text-container dark">
+
+<pre>
+		<span  class='bg-green'> Background Green </span>
+		<span  class='bg-red'> Background Red </span>
+		<span  class='bg-blue'> Background Blue </span>
+		<span  class='bg-yellow'>Background  Yellow </span>
+		<span  class='bg-white c-black'>Background  White </span>
+		<span  class='bg-black c-white'> Background Black </span>
+</pre>
+	</div>
+
+
+		<h1 id="Buttons" >Buttons</h1>
+		<hr>
+	<div class='text-container mt-2 '>
+		<button class="btn ">Button stantdard</button>
+		<button class="btn btn-1">Button one </button>
+		<button class="btn btn-2 ">Button two </button>
+		<button class="btn btn-3">Button three</button>
+		<button class="btn btn-4">Button four </button>
+		<button class="btn btn-5 ">Button five </button>
+		<button class="btn btn-6 ">Button six </button>
+
+		<button class="btn btn-success">Button success</button>
+		<button class="btn btn-warning">Button warning </button>
+		<button class="btn btn-danger">Button danger</button>
+
+	</div>
+
+<h3>Code : </h3>
+	<div class="text-container dark">
+
+<pre>
+	<button class="btn">Button stantdard</button>
+	<button class="btn btn-1">Button one </button>
+	<button class="btn btn-2 ">Button two </button>
+	<button class="btn btn-3">Button three</button>
+	<button class="btn btn-4">Button four </button>
+	<button class="btn btn-5 ">Button five </button>
+	<button class="btn btn-6 ">Button six </button>
+	<button class="btn btn-success">Button success</button>
+	<button class="btn btn-warning">Button warning </button>
+	<button class="btn btn-danger">Button danger</button>
+</pre>
+	</div>
+
+
+	<h1 id="ButtonSizes" class='mt-2'>Button sizes</h1>
+	<hr>
+	<div class='text-container mt-2  center-text'>
+		<button class="btn btn-6 btn-small">Button</button>
+		<button class="btn btn-6 btn-medium">Button </button>
+		<button class="btn btn-6 btn-large">Button </button>
+	</div>
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<button class="btn btn-6 btn-small">Button</button>
+	<button class="btn btn-6 btn-medium">Button </button>
+	<button class="btn btn-6 btn-large">Button </button>
+	</pre>
+</div>
+
+	<h1 id="TextSizes" class='mt-2' >Text Sizes</h1>
+	<hr>
+	<div class='text-container stacked'>
+			    <p class='text-huge'>Text-huge</p>
+				<p class='text-large'>Text-large</p>
+				<p class='text-medium'>Text-medium</p>
+				<p class='text-small'>Text-small</p>
+	</div>
+
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<p class='text-huge'>Text-huge</p>
+	<p class='text-large'>Text-large</p>
+	<p class='text-medium'>Text-medium</p>
+	<p class='text-small'>Text-small</p>
+	</pre>
+</div>
+
+<h1 id="Borders" class='mt-2'>Borders</h1>
+	<hr>
+	<div class='text-container center-children'>
+		    <p class='border p-2 mr-2'>Border standard</p>
+			<p class='border-1 p-2 mr-2'>Border 1</p>
+			<p class='border-2 p-2 mr-2'>Border 2</p>
+			<p class='border-3 p-2'>Border 3</p>
+	</div>
+
+	<h3>Code : </h3>
+	
+	<div class="text-container dark">
+		<pre>
+		<p class='border'>Border standard</p>
+		<p class='border-1'>Border 1</p>
+		<p class='border-2'>Border 2</p>
+		<p class='border-3 '>Border 3</p>
+		
+	</pre>
+	</div>
+
+
+
+<h1 id="Shadows" class='mt-2'>Shadows</h1>
+	<hr>
+	<div class='text-container center-children'>
+			    <p class='shadow p-2 mr-2'>Shadow standard</p>
+				<p class='shadow-1 p-2 mr-2'>Shadow 1</p>
+				<p class='shadow-2 p-2 mr-2'>Shadow 2</p>
+				<p class='shadow-3 p-2'>Shadow 3</p>
+	</div>
+
+	<h3>Code : </h3>
+	
+	<div class="text-container dark">
+		<pre>
+			<p class='shadow '>Shadow standard</p>
+			<p class='shadow-1'>Shadow 1</p>
+			<p class='shadow-2 '>Shadow 2</p>
+			<p class='shadow-3 '>Shadow 3</p>
+		</pre>
+		</div>
+	
+
+
+
+<h1 id="Header" class='mt-2'>Header / Nav </h1>
+<hr>
+	<h2>Example 1</h2>
+	<div class='nav  sb'>
+		<a class='nav-brand' href="">RelaxCSS</a>
+			<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<div class='nav sb'>
+		<a class='nav-brand' href="">RelaxCSS</a>
+
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</div>
+	</pre>
+	</div>
+	<h2>Example 2</h2>
+	<nav class='nav nav-center'>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<nav class='nav nav-center'>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	</pre>
+</div>
+	<h2>Example 3</h2>
+
+	<nav class='nav'>
+		<a class='nav-brand' href="">RelaxCSS</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	
+	<nav class='nav'>
+		<a class='nav-brand' href="">RelaxCSS</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	</pre>
+</div>
+
+
+
+
+	<h1 id="FontWeight" class='mt-2'>Bold and Light Text</h1>
+	<hr>
+	<div class='text-container'>
+	<div class="text-bold">Commodi blanditiis, nobis. Dignissimos facere eos. Atque cupiditate ,aperiam a consequatur ab eveniet!</div>
+
+	<div class="text-light mt-2">Commodi blanditiis, nobis. Dignissimos facere  harum veritatis quia repellendus aperiam a consequatur ab eveniet!</div>
+	</div>
+
+	<h3>Code : </h3>
+<div class="text-container dark">
+<pre>
+	<div class="text-bold">Commodi blanditiis, nobis. Dignissimos facere eos. Atque cupiditate ,aperiam a consequatur ab eveniet!</div>
+	<div class="text-light">Commodi blanditiis, nobis. Dignissimos facere  harum veritatis quia repellendus aperiam a consequatur ab eveniet!</div>
+</pre>
+
+</div>
+
+
+
+	<h1 id="TextContainers" class='mt-2'>Text-Containers</h1>
+	<hr>
+	<div class='text-container'>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	</div>
+	<h3>Code : </h3>
+<div class="text-container dark">
+<pre>
+	<div class='text-container'>
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+	
+	</div>
+</pre>
+</div>
+	
+	<h1 id="StackedCentered" class='mt-2'>Stacked & centered elements</h1>
+	<hr>
+	<h3>Centered text </h3>
+	<div class="text-container">
+		<div class='center-text text-medium'>centered text</div>
+	</div>
+	<h3>Code : </h3> 
+	<div class="text-container dark">
+	<pre>
+	<div class='text-container'>
+		<div class='center-text'>Centered text</div>
+	</div>
+</pre>
+</div>
+	<h3 class='mt-2'>Centered children</h3>
+	<div class="text-container center-children">
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+	</div>
+	<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+
+	<div class="text-container center-children">
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+	</div>
+</pre>
+</div>
+	<h3 class='mt-2'>Space between elements</h3>
+	<div class="text-container center-children sb">
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+	</div>
+	<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container center-children sb">
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+		<div class='border p-2'>element</div>
+	</div>
+</pre>
+</div>
+	<h3 class='mt-2'>Stacked elements</h3>
+	<div class="text-container stacked">
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1' >element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+	</div>
+	<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container stacked">
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1' >element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+	</div>
+</pre>
+</div>
+	<h3>Stacked & Centered elements</h3>
+	<div class="text-container stacked-center">
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+	</div>
+	<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container stacked-center">
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+		<span class='border p-2 mb-1'>element</span>
+	</div>
+</pre>
+</div>
+
+<h1 id="Margins" class='mt-1'>Margins</h1>
+<hr>
+<div class="text-container">
+	<div class='border ml-1'>Margin left level one</div>
+	<div class='border ml-2'>Margin left level two</div>
+	<div class='border ml-3'>Margin left level three</div>
+</div>
+<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container">
+		<div class='border ml-1'>Margin left level one</div>
+		<div class='border ml-2'>Margin left level two</div>
+		<div class='border ml-3'>Margin left level three</div>
+ 	</div>
+</pre>
+</div>
+
+
+<h1 id="Paddings" class='mt-1' >Paddings</h1>
+<hr>
+<div class="text-container">
+	<div class='border p-1 mb-1'>Padding level one</div>
+	<div class='border p-2 mb-1'>Padding level two</div>
+	<div class='border p-3 mb-1'>Padding level three</div>
+</div>
+<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container">
+		<div class='border p-1 mb-1'>Padding level one</div>
+		<div class='border p-2 mb-1'>Padding level two</div>
+		<div class='border p-3 mb-1'>Padding level three</div>
+	</div>
+</pre>
+</div>
+
+<h1 id="Width" class='mt-1'>Widths</h1>
+<hr>
+<div class="text-container">
+	<div class='border w-1 mb-1'>width level one</div>
+	<div class='border w-2 mb-1'>width level two</div>
+	<div class='border w-3 mb-1'>width level three</div>
+	<div class='border w-max mb-1'>width level max</div>
+</div>
+<h3>Code : </h3> 
+	<div class="text-container dark">
+<pre>
+	<div class="text-container">
+		<div class='border w-1 mb-1'>width level one</div>
+		<div class='border w-2 mb-1'>width level two</div>
+		<div class='border w-3 mb-1'>width level three</div>
+		<div class='border w-max mb-1'>width level max</div>
+	</div>
+</div>
+</pre>
+
+
+
+
+<h1 id="LightDark" class='mt-1'>Light and Dark color variations</h1>
+<hr>
+<div class="text-container light">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+</div>
+<div class="text-container dark mt-1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+</div>
+<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<div class="text-container light">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	</div>
+
+	<div class="text-container dark">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	</div>
+	</pre>
+</div>
+
+
+
+	<h1 class='mt-1'>Tables</h1>
+
+	<table id="Tables" class='tab center'>
+		<hr>
+			<tr>
+				<th>table head 1</th>
+				<th>table head 2</th>
+				<th>table head 3</th>
+				<th>table head 4</th>
+				<th>table head 5</th>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td>content</td>
+				<td>content</td>
+					<td>content</td>
+						<td>content</td>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td>content</td>
+				<td>content</td>
+				<td>content</td>
+				<td>content</td>
+			</tr>
+	</table>
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+		<table class='tab center'>
+		<tr>
+			<th>table head 1</th>
+			<th>table head 2</th>
+			<th>table head 3</th>
+			<th>table head 4</th>
+			<th>table head 5</th>
+		</tr>
+		<tr>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+		</tr>
+		<tr>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+			<td>content</td>
+		</tr>
+	</table>
+	</pre>
+</div>
+
+		<h1 id="Forms" class='mt-1' >Forms</h1>
+		<hr>
+	<form class='r-form center-children' action="">
+		<h1 class="center-text">Sign up</h1>
+		<label for="">Email</label>
+		<input class='input-text'type="text" placeholder="example@email.com" />
+		<label for="">Password</label>
+		<input class='input-text'type="text" placeholder="password" />
+		<label for="">Description</label>
+		<textarea class='input-text'></textarea>
+		<button class="btn btn-6 btn-small">Sign up </button>
+	</form>
+	<h3>Code : </h3>
+	<div class="text-container dark">
+	<pre>
+	<form class='r-form center-children' action="">
+		<h1 class="center-text">Sign up</h1>
+		<label for="">Email</label>
+		<input class='input-text'type="text" placeholder="example@email.com" />
+		<label for="">Password</label>
+		<input class='input-text'type="text" placeholder="password" />
+		<label for="">Description</label>
+		<textarea class='input-text'></textarea>
+		<button class="btn btn-6 btn-small">Sign up </button>
+	</form>
+	</pre>
+	</div>
+	<hr>
+	<div class='border light center-text mt-2 p-3'>
+		<span>Thanks & Have fun :) </span>
+	</div>
+
+<!-- 	<h1>Footer</h1>
+	<footer class='foot light center-text nav-sa'>
+			<div class="foot-element">
+				<ul>
+				<h3>Title</h3>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				</ul>
+			</div>
+				<div class="foot-element">
+				<ul>
+				<h3>Title 2</h3>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+				<li>Some Links</li>
+			</ul>
+			</div>
+			&copy 2019
+	</footer> -->
+	<div id='footer'>
+	</div>
+
+
+	</body>
+
+	<script type="text/javascript">
+		function encodePreElements() {
+    var pre = document.getElementsByTagName('pre');
+    for(var i = 0; i < pre.length; i++) {
+        var encoded = htmlEncode(pre[i].innerHTML);
+        pre[i].innerHTML = encoded;
+    }
+};
+
+function htmlEncode(value) {
+   var div = document.createElement('div');
+   var text = document.createTextNode(value);
+   div.appendChild(text);
+   return div.innerHTML;
+}
+	</script>
+	</html>
