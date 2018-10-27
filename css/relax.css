@@ -604,3 +604,29 @@ p.border
 	border-radius: 3px; 
 	padding: 2em 0em; 
 }
+
+.rounded
+{
+	border-radius: 5px ; 
+}
+.rounded-1
+{
+	border-radius: 10px ; 
+}
+.rounded-2
+{
+	border-radius: 20px ; 
+}
+.rounded-3
+{
+	border-radius: 100px ; 
+}
+
+/* will be added soon */
+./*card{
+	border:1px solid silver;
+	height: 10vh ; 
+}
+.card-btn{
+	padding: 10px; 
+}*/
