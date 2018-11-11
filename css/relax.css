@@ -17,11 +17,12 @@ hr
 }
 p
 { 
-	display: inline-block;
-	clear: both; 
 	margin: .2em 0; 
 }
-
+button{
+	outline: none; 
+	border:none ;
+}
 /*container class*/
 .container
 {
@@ -622,11 +623,26 @@ p.border
 	border-radius: 100px ; 
 }
 
-/* will be added soon */
-./*card{
+.r-card{
+	margin:1em 0px ; 
+	display: flex ; 
+	flex-direction: column;
+	justify-content: space-between;
 	border:1px solid silver;
-	height: 10vh ; 
+	height: 300px ; 
+	padding: 10px ; 
+	width: 300px ; 
+	border:1px solid silver;
+	border-radius: 5px ; 
+	overflow: scroll; 
+	color : #666;
+}
+.r-card > img {
+	border-radius: 5px ; 
+}
+.btn-group{
+	display: flex ; 
 }
 .card-btn{
 	padding: 10px; 
-}*/
+}

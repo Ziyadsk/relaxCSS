@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="relax.css">
+	<link rel="stylesheet" href="../css/relax.css">
 	<title>RelaxCSS : A mini CSS library</title>
-
+	
 </head>
 <style type="text/css">
 	@font-face
@@ -22,9 +22,11 @@
 	}
 	aside
 	{
-		position: sticky;
-		top:1px;
-		height: 90vh ; 
+		position: sticky; 
+		top : 1px ;
+		height: 90vh; 
+		overflow: scroll ; 
+		margin-right: 1em; 
 	}
 	ul
 	{
@@ -51,6 +53,7 @@
 	}
 	main
 	{
+		margin-left: 1em ; 
 		display: grid ; 
 		grid-template-columns: 1fr 3fr ; 
 	}
@@ -109,12 +112,15 @@
 			<li><a href="#LightDark">Light/Dark</a></li>
 			<li><a href="#Tables">Tables</a></li>
 			<li><a href="#Forms">Forms</a></li>
+			<li><a href="#Cards">Cards</a></li>
 		</ul>
 	</aside>
 
 	<div class="container center">
 	
-	<h1 class='text-large center-text c-black'>Welcome to RelaxCSS</h1>
+	<h1 class='text-large center-text c-black'>RelaxCSS</h1>
+	<p class="center-text"><em>simple and minimal <i class="bg-blue c-white p-1">way</i> to write CSS</em></p>
+	
 	<h1 id="Headings">Headings</h1>
 	<hr>
 	<div class="text-container">
@@ -153,19 +159,21 @@
 	<div class="text-container dark">
 
 <pre>
+	<code class='html'>
 	<span  class='c-green'> Green </span>
 	<span  class='c-red'> Red </span>
 	<span  class='c-blue'> Blue </span>
 	<span  class='c-yellow'> Yellow </span>
 	<span  class='c-white dark'> White </span>
 	<span  class='c-black'> Black </span>
+	</code>
 </pre>
 	</div>
 
 
 <h1 id="BacgroundColors" class='mt-2'>Background colors</h1>
 	<hr>
-	<div class="text-container">
+	<div class="text-container stacked">
 		<span  class='bg-green c-white p-1 m-1'> Background Green </span>
 		<span  class='bg-red  c-white p-1 m-1'> Background Red </span>
 		<span  class='bg-blue  c-white p-1 m-1'> Background Blue </span>
@@ -190,7 +198,7 @@
 		<h1 id="Buttons" >Buttons</h1>
 		<hr>
 	<div class='text-container mt-2 '>
-		<button class="btn ">Button stantdard</button>
+		<button class="btn ">Button standard</button>
 		<button class="btn btn-1">Button one </button>
 		<button class="btn btn-2 ">Button two </button>
 		<button class="btn btn-3">Button three</button>
@@ -292,10 +300,10 @@
 	
 	<div class="text-container dark">
 		<pre>
-		<p class='border'>Border standard</p>
-		<p class='border-1'>Border 1</p>
-		<p class='border-2'>Border 2</p>
-		<p class='border-3 '>Border 3</p>
+		<p class='rouned'>Border standard</p>
+		<p class='rounded-1'>Border 1</p>
+		<p class='rounded-2'>Border 2</p>
+		<p class='rounded-3 '>Border 3</p>
 		
 	</pre>
 	</div>
@@ -717,16 +725,73 @@
 	</pre>
 	</div>
 	<hr>
-<!-- 	<div class="card">
-		<button class="card-btn">SayYes</button>
-		<button class="card-btn btn-2 rounded-3">GO home</button>
+
+	<h1 id="Cards" class='mt-1' >Cards</h1>
+	<div class="text-container center-children">
+	<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur tenetur id quo placeat distinctio esse sequi eligendi iusto? Maiores aspernatur suscipit harum facilis esse labore eos nulla laboriosam repellendus.</span>
+		<span>Quisquam delectus optio libero, mollitia, est soluta, vitae, ex officia ut repellendus reprehenderit expedita voluptas ab velit dignissimos doloribus quia nobis quasi autem sapiente? Repellendus, ea repudiandae officia quidem facilis.</span></p>
+		<div class='btn-group sb'>
+		</div>
 	</div>
+	<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<div class='btn-group sa'>
+		<button class="btn-3 rounded p-2 w-2">button</button>
+		<button class="btn-5 rounded p-2 ml-1 w-2">button</button>
+		</div>
+	</div>
+	<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<div class='btn-group stacked'>
+		<button class="btn-6 rounded-1 p-2 mt-1 w-max">Button</button>
+		<button class="btn-danger rounded-1 p-2 mt-1 w-max">Button</button>
+		</div>
+	</div>
+	</div>
+	<h3>Code(1) </h3>
+	<div class="text-container dark">
+	<pre>
+	<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur tenetur id quo placeat distinctio esse sequi eligendi iusto? Maiores aspernatur suscipit harum facilis esse labore eos nulla laboriosam repellendus.</span></p>
+	</div>
+	</pre>
+	</div>
+	
+	<h3>Code(2) </h3>
+	<div class="text-container dark">
+	<pre>
+		<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<div class='btn-group sa'>
+		<button class="btn-3 rounded-1 p-2 w-2">button</button>
+		<button class="btn-5 rounded-1 p-2 ml-1 w-2">button</button>
+		</div>
+	</div>
+	</pre>
+	</div>
+
+	<h3>Code(3) :</h3>
+	<div class="text-container dark">	
+	<pre>
+	<div class="r-card">
+		<img src="https://via.placeholder.com/200x220"/> 
+		<div class='btn-group stacked'>
+		<button class="btn-6 rounded-1 p-2 mt-1 w-max">Button</button>
+		<button class="btn-danger rounded-1 mt-1 p-2 w-max">Button</button>
+		</div>
+	</div>
+	</pre>
+	</div>
+
 	<div class='border light center-text mt-2 p-3'>
 		<span>Thanks & Have fun :) </span>
-	</div> -->
+	</div>
 
-<!-- 	<h1>Footer</h1>
-	<footer class='foot light center-text nav-sa'>
+	<!-- <h1>Footer</h1> -->
+<!-- 	<footer class='foot light center-text nav-sa'>
 			<div class="foot-element">
 				<ul>
 				<h3>Title</h3>
@@ -751,15 +816,15 @@
 			</div>
 			&copy 2019
 	</footer> -->
-	<div id='footer'>
-	</div>
-	
+	<!-- <div id='footer'>
+	</div> -->
+
 
 </main>
 
 	</body>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 		function encodePreElements() {
     var pre = document.getElementsByTagName('pre');
     for(var i = 0; i < pre.length; i++) {
@@ -775,4 +840,5 @@ function htmlEncode(value) {
    return div.innerHTML;
 }
 	</script>
+
 	</html>
