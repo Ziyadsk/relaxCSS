@@ -646,3 +646,6 @@ p.border
 .card-btn{
 	padding: 10px; 
 }
+.underlined{
+	text-decoration: underline ; 
+}
