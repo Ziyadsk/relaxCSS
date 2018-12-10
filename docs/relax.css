@@ -640,6 +640,10 @@ p.border
 .r-card > img {
 	border-radius: 5px ; 
 }
+.r-card button,
+.r-card input[type="submit"]{
+	cursor: pointer ; 
+}
 .btn-group{
 	display: flex ; 
 }
