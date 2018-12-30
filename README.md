@@ -1,8 +1,8 @@
 # relaxCSS
 A minimal CSS library .
 
-## Usage
-```<link rel="stylesheet" href="relaxCSS.css">```
+## Get Started
+[Get started](https://ziyadsk.github.io/relaxCSS/install.html)
 
 ## Documentation
 [Documentation](https://ziyadsk.github.io/relaxCSS/)
