@@ -46,7 +46,7 @@ button{
 	max-width: 98%; 
 	border-radius: 5px; 
 	margin: 0 auto ; 
-	overflow: scroll;
+	overflow: auto;
 	word-wrap: break-word;
 
 }
@@ -653,7 +653,7 @@ button{
 	width: 300px ; 
 	border:1px solid silver;
 	border-radius: 5px ; 
-	overflow: scroll; 
+	overflow: auto;
 	color : #666;
 }
 .r-card > img {
